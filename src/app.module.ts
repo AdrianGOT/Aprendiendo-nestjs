@@ -4,6 +4,7 @@ import { ProjectsModule } from './projects/projects.module';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { PaymentsModule } from './payments/payments.module';
+import { SwaggerModule } from '@nestjs/swagger';
 
 @Module({
   imports: [ 
@@ -11,7 +12,8 @@ import { PaymentsModule } from './payments/payments.module';
     ProjectsModule,
     UsersModule,
     AuthModule,
-    PaymentsModule
+    PaymentsModule,
+    SwaggerModule
   ],
   controllers: [],
   providers: [],
